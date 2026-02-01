@@ -1,12 +1,10 @@
 {
-  "name": "harmony-demo",
-  "version": "1.0.0",
-  "description": "Demo application for Harmony library",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "build": "webpack --mode production --entry ./src/main.js"
   },
   "dependencies": {
-    "@openai/harmony": "^0.1.0"
+    "@openai/harmony": "^0.1.0",
+    "webpack": "^5.0.0"
   }
 }
