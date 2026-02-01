@@ -1,0 +1,62 @@
+{
+  "pr/45-googlefan256-main": [
+    {
+      "sha": "9fa3f54cf2a2501c7dcbf554d5fbdd0de619fdda",
+      "author": "googlefan256",
+      "message": "Update format.md",
+      "files_changed": 1
+    },
+    {
+      "sha": "3efbf742533a375fc148d75513597e139329578b",
+      "author": "scott-oai",
+      "message": "Merge pull request #29 from axion66/improve-readme-and-checks\n\ndocs: fix typo in README.md ( - harmony -> - python/openai_harmony)",
+      "files_changed": 1
+    },
+    {
+      "sha": "9d653a4c7382abc42d115014d195d9354e7ad357",
+      "author": "scott-oai",
+      "message": "Merge pull request #30 from Yuan-ManX/harmony-format\n\nUpdate harmony format",
+      "files_changed": 1
+    }
+  ],
+  "pr/25-neuralsorcerer-patch-1": [
+    {
+      "sha": "c505a03e9c9a388a511b6125756097eee523742a",
+      "author": "neuralsorcerer",
+      "message": "fix: `meta_sep` token and add to registry",
+      "files_changed": 1
+    },
+    {
+      "sha": "c044bf33f7e835ca6a723ccc97848de25dba5164",
+      "author": "neuralsorcerer",
+      "message": "fix: `meta_sep` token in `encoding.rs`",
+      "files_changed": 1
+    },
+    {
+      "sha": "b255cbeb6274adbea774f26fd9590922ce8874ed",
+      "author": "scott-oai",
+      "message": "Merge pull request #18 from openai/dev/scl/better-ci\n\nbetter ci",
+      "files_changed": 6
+    }
+  ],
+  "pr/41-amirhosseinghanipour-fix-race-conditions-and-offline-api": [
+    {
+      "sha": "1dca6392934bf4e3c403b2ecc2104e8ff3f67f45",
+      "author": "amirhosseinghanipour",
+      "message": "fix race conditions and add offline tokenizer loading api",
+      "files_changed": 8
+    },
+    {
+      "sha": "9528c7b4a00a3307fd9685fc1328aee11c3d9c90",
+      "author": "scott-oai",
+      "message": "version bump",
+      "files_changed": 2
+    },
+    {
+      "sha": "82b3afb9eb043343f322c937262cc50405e892c3",
+      "author": "scott-oai",
+      "message": "Merge pull request #26 from jordan-wu-97/jordan/fix-function-call-atomic-bool\n\nfix: make `HarmonyEncoding` usable concurrently",
+      "files_changed": 6
+    }
+  ]
+}

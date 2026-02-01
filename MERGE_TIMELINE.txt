@@ -1,0 +1,18 @@
+MERGE TIMELINE - 10 Most Recent Merge Commits from Main Branch
+=================================================================
+
+2025-08-06T23:21:08Z | Merge pull request #29 from axion66/improve-readme-and-checks - docs: fix typo in README.md ( - harmony -> - python/openai_harmony) | 3efbf742533a375fc148d75513597e139329578b
+2025-08-06T23:20:40Z | Merge pull request #30 from Yuan-ManX/harmony-format - Update harmony format | 9d653a4c7382abc42d115014d195d9354e7ad357
+2025-08-06T23:15:37Z | Merge pull request #28 from dkqjrm/fix-typo-format-md - Fix a typo in the safety warning section | 161e5fe2a57c63e9f8353c4c5b8faa3c3854bb5f
+2025-08-06T00:12:50Z | Merge pull request #26 from jordan-wu-97/jordan/fix-function-call-atomic-bool - fix: make `HarmonyEncoding` usable concurrently | 82b3afb9eb043343f322c937262cc50405e892c3
+2025-08-05T20:44:48Z | Merge pull request #18 from openai/dev/scl/better-ci - better ci | b255cbeb6274adbea774f26fd9590922ce8874ed
+2025-08-05T20:40:06Z | Merge pull request #21 from Tialo/main - fix format.md | 058ef3257c24fb099aac7960c10ce51c8e55d9fe
+2025-08-05T18:43:57Z | Merge pull request #8 from RustedBytes/main - Fix errors in wasm_module | f6179119ca894eda4124c86d408c01fdbf5281f0
+2025-08-05T18:23:50Z | Merge pull request #17 from openai/dev/scl/add-docs-to-cargo - Fix readme rust sample, version bump | 64bca4cf327ebeafa0bbd0345650d86e2d02142f
+2025-08-05T18:05:10Z | Merge pull request #15 from CharlesCNorton/patch-1 - docs: fix typo in README.md (premables -> preambles) | eeece1861c65c6f60ff072fd110103abb037fb62
+2025-08-05T17:50:47Z | Merge pull request #13 from michaelfeil/mf/fix-bindings - enable abi3-py38 | 4e5c2f673b5d6005148aac69e06dd959b9e47325
+
+=================================================================
+Note: Merge commits are listed in reverse chronological order (newest first).
+These are commits with exactly 2 parent commits, representing merged PRs.
+The referenced PR numbers no longer exist in the repository.
