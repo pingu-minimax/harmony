@@ -1,0 +1,31 @@
+[package]
+name = "harmony"
+version = "1.1.0"
+edition = "2021"
+authors = ["Harmony Team"]
+description = "Harmony encoding library for tokenization"
+license = "MIT"
+repository = "https://github.com/pingu-minimax/harmony"
+keywords = ["tokenization", "encoding", "nlp"]
+categories = ["text-processing", "encoding"]
+
+[lib]
+name = "harmony"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["full"] }
+criterion = "0.5"
+
+[features]
+default = []
+async = ["tokio"]
+
+[[bench]]
+name = "encoding_benchmark"
+harness = false
