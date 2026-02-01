@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+target/
+
+# Build outputs
+dist/
+build/
+*.wasm
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+
+# Avoid ignoring shadcn utils
+!demo/harmony-demo/src/lib
