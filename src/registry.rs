@@ -16,6 +16,8 @@ pub enum FormattingToken {
     System,
     User,
     Assistant,
+    Tool,
+    Function,
 }
 
 /// Token registry for managing formatting token registrations
@@ -36,6 +38,8 @@ impl TokenRegistry {
             (FormattingToken::System, "<|system|>"),
             (FormattingToken::User, "<|user|>"),
             (FormattingToken::Assistant, "<|assistant|>"),
+            (FormattingToken::Tool, "<|tool|>"),
+            (FormattingToken::Function, "<|function|>"),
         ];
 
         let mut tokens = HashMap::new();
@@ -77,6 +81,11 @@ impl TokenRegistry {
     pub fn all_tokens(&self) -> Vec<(FormattingToken, &'static str)> {
         self.tokens.iter().map(|(&k, &v)| (k, v)).collect()
     }
+
+    /// Returns the total count of registered tokens
+    pub fn token_count(&self) -> usize {
+        self.tokens.len()
+    }
 }
 
 impl Default for TokenRegistry {
@@ -117,5 +126,20 @@ mod tests {
         
         assert!(tokens.iter().any(|(t, r)| *t == FormattingToken::MetaSep && *r == "<|meta_sep|>"));
         assert!(tokens.iter().any(|(t, r)| *t == FormattingToken::MetaEnd && *r == "<|meta_end|>"));
+    }
+
+    #[test]
+    fn test_tool_and_function_registration() {
+        let registry = TokenRegistry::new();
+        assert!(registry.is_registered(FormattingToken::Tool));
+        assert!(registry.is_registered(FormattingToken::Function));
+        assert_eq!(registry.get_repr(FormattingToken::Tool), Some("<|tool|>"));
+        assert_eq!(registry.get_repr(FormattingToken::Function), Some("<|function|>"));
+    }
+
+    #[test]
+    fn test_token_count() {
+        let registry = TokenRegistry::new();
+        assert_eq!(registry.token_count(), 10);
     }
 }
