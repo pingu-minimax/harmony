@@ -24,6 +24,10 @@ pub enum FormattingToken {
     User,
     /// Assistant token
     Assistant,
+    /// Tool token (new in v1.2.0)
+    Tool,
+    /// Function token (new in v1.2.0)
+    Function,
 }
 
 impl FormattingToken {
@@ -38,6 +42,8 @@ impl FormattingToken {
             FormattingToken::System => "<|system|>",
             FormattingToken::User => "<|user|>",
             FormattingToken::Assistant => "<|assistant|>",
+            FormattingToken::Tool => "<|tool|>",
+            FormattingToken::Function => "<|function|>",
         }
     }
 }
@@ -59,6 +65,8 @@ impl TokenEncoder {
         token_map.insert(FormattingToken::System, "<|system|>");
         token_map.insert(FormattingToken::User, "<|user|>");
         token_map.insert(FormattingToken::Assistant, "<|assistant|>");
+        token_map.insert(FormattingToken::Tool, "<|tool|>");
+        token_map.insert(FormattingToken::Function, "<|function|>");
         
         TokenEncoder { token_map }
     }
@@ -95,5 +103,12 @@ mod tests {
     fn test_formatting_token_as_str() {
         assert_eq!(FormattingToken::MetaSep.as_str(), "<|meta_sep|>");
         assert_eq!(FormattingToken::Channel.as_str(), "<|channel|>");
+    }
+
+    #[test]
+    fn test_tool_and_function_tokens() {
+        let encoder = TokenEncoder::new();
+        assert_eq!(encoder.encode(FormattingToken::Tool), "<|tool|>");
+        assert_eq!(encoder.encode(FormattingToken::Function), "<|function|>");
     }
 }
