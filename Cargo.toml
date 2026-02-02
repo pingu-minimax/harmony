@@ -1,12 +1,12 @@
 [package]
 name = "harmony"
-version = "1.1.0"
+version = "1.2.0"
 edition = "2021"
 authors = ["Harmony Team"]
 description = "Harmony encoding library for tokenization"
 license = "MIT"
 repository = "https://github.com/pingu-minimax/harmony"
-keywords = ["tokenization", "encoding", "nlp"]
+keywords = ["tokenization", "encoding", "nlp", "function-calling"]
 categories = ["text-processing", "encoding"]
 
 [lib]
@@ -25,6 +25,7 @@ criterion = "0.5"
 [features]
 default = []
 async = ["tokio"]
+function-calling = []
 
 [[bench]]
 name = "encoding_benchmark"
