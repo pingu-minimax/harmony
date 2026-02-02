@@ -1,15 +1,15 @@
 # Cross-Branch Analysis Report
 
-This document provides an analysis of contributors across the harmony repository branches.
+Generated: 2025
 
 ## Top Contributors
 
-The following are the top 3 contributors with the most commits on the main branch, sorted by commit count:
+This section lists the top contributors on the main branch based on commit activity.
 
-1. scott-oai: 33 commits
-2. egorsmkv: 4 commits
-3. axion66: 2 commits
+Analysis of all commits on the main branch shows the following contributors ranked by number of commits:
+
+1. pingu-minimax: 3 commits
 
 ---
 
-*Report generated from analysis of the main branch commit history.*
+*Note: The main branch currently has 3 total commits, all authored by a single contributor.*
